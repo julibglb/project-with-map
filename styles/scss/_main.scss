@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+ body {
+    background-color: $lightblack;
+ }
+
+ section {
+    width: 1104px;
+    background-color: $darkgrey;
+    display: flex;
+    flex-direction: row;
+    margin: 10% auto;
+    height: 718px;
+    border-radius: 8px;
+ }
+
+ .contact-form {
+    padding: 114px 88px 114px 68px;
+    width: 50%;
+    font-family: "Lexend Deca";
+    
+    h1 {
+        color: $white;
+        font-size: 34px;
+        font-weight: normal;
+        margin-bottom: 32px;
+    }
+ }
+
+ .name-assistant {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 28px;
+    text-decoration: none;
+
+    img {
+       width: 50px;
+       height: 50px; 
+       border-radius: 50%;
+    }
+
+    span {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.18px;
+        color: $white;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1.5px solid $grey;
+    }
+ }
+
+ .forms {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    button {
+        width: 192px;
+        margin-left: 0;
+        margin-right: auto;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.5;
+        letter-spacing: 0.18px;
+        color: $darkgrey;
+        padding: 10px 40px;
+        border: 2px solid #f8edcf;
+        border-radius: 3px;
+        background-color: #f8edcf;
+        transition: all 0.5s ease, transform 0.3s ease;
+        
+        &:hover {
+            cursor: pointer;
+            background-color: #f1d68d;
+            border: 2px solid #f1d68d;
+            width: 250px;
+            font-size: 14px;
+            transform: translateX(12px) scale(1.1);
+            
+        }
+    }
+ }
+
+.form-block {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: $darkwhite;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.18px;
+    
+
+    input {
+        @include bginputPrimary;
+
+        &::placeholder {
+            font-size: 10px;
+            font-weight: 300;
+        }
+    }
+
+    textarea {
+        @include bginputPrimary;
+        height: 74px;
+        resize: none;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+}
+
+ .map {
+    iframe {
+        max-width: 552px;
+        height: 718px;
+        border-radius: 0 8px 8px 0;
+    }
+ }
